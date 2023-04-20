@@ -5,9 +5,9 @@ y = (int(input("Informe mais um número: ")))
 
 if x >= y:
     diferenca = x - y
-    print(f"A diferença entre x e y é {diferenca:.0f}. :D")
 else:
     diferenca = y - x
-    print(f"A diferença entre x e y é {diferenca:.0f}. :D")
+
+print(f"A diferença entre x e y é {diferenca:.0f}. :D")
 
 print("Fim. :D")
