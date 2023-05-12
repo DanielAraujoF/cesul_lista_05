@@ -5,7 +5,7 @@
 # paralisarem suas atividades. Escrever um algoritmo que lê o índice de poluição medido e emite a notificação adequada
 # aos diferentes grupos de empresas.
 
-indice = float(input("Qual o índice de poluição atual?"))
+indice = float(input("Qual o índice de poluição atual? "))
 
 if 0.25 <= indice <= 3:
     print("intimação e suspensão do 1° grupo")
