@@ -7,11 +7,21 @@
 
 indice = float(input("Qual o índice de poluição atual? "))
 
-if 0.25 <= indice <= 3:
-    print("intimação e suspensão do 1° grupo")
-elif 0.31 <= indice <= 0.4:
-    print("intimação e suspensão do 1° e 2° grupo")
-elif indice >= 0.41:
-    print("todos os 3 devem suspender")
+if 0.25 < indice > 0.41:
+    print("Os três grupos devem ser notificados a paralisarem suas atividades.")
+elif indice >= 0.31:
+    print("O 1º e 2º grupo devem ser intimadas a suspenderem suas atividades.")
+elif indice >= 0.25:
+    print("As indústrias do 1º grupo devem ser intimadas a suspenderem suas atividades.")
 else:
     print("Aceitável.")
+
+# antes feito assim deu errado ↓
+# if 0.25 <= indice <= 3:
+#     print("intimação e suspensão do 1° grupo")
+# elif 0.31 <= indice <= 0.4:
+#     print("intimação e suspensão do 1° e 2° grupo")
+# elif indice >= 0.41:
+#     print("todos os 3 devem suspender")
+# else:
+#     print("Aceitável.")
