@@ -7,11 +7,11 @@
 #                                         | Acima de 1601  | 40% do valor do saldo médio |
 # Mostre uma mensagem informando o saldo médio e o valor do crédito.
 
-saldoMedio = int(input("Insira seu saldo médio: "))
+saldoMedio = float(input("Insira seu saldo médio: "))
 
-percentStr = 1
+percentStr = "0%"
 if saldoMedio <= 500:
-    percent = 1
+    percent = 0
 elif 501 <= saldoMedio <= 1000:
     percent = 0.2
     percentStr = "20%"
@@ -24,4 +24,4 @@ else:
 
 calculo = saldoMedio * percent
 
-print(f"Você terá {percentStr} de cŕedito sobre seu saldo mensal. Significa {calculo} do saldo médio como crédito!")
+print(f"Você terá {percentStr} de cŕedito sobre seu saldo mensal. Significa {calculo:.2f} do saldo médio como crédito!")
